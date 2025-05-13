@@ -1,6 +1,9 @@
+//go:build windows
+// +build windows
+
 package zlib
 
 /*
-#cgo LDFLAGS: -L./lib -lzlib_wrapper_windows -lz
+#cgo LDFLAGS: -L${SRCDIR}/lib -lzlib_wrapper_windows -lzlibstatic
 */
 import "C"
