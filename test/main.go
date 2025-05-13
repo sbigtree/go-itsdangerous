@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"itsdangerous"
-	"itsdangerous/zlib"
+	"github.com/sbigtree/go-itsdangerous"
+	"github.com/sbigtree/go-itsdangerous/zlib"
 )
 
 type User struct {
