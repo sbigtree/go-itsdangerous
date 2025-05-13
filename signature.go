@@ -9,9 +9,9 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	zip "github.com/sbigtree/go-itsdangerous/zlib"
 	"hash"
 	"io"
-	zip "itsdangerous/zlib"
 	"strings"
 )
 
