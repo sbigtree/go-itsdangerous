@@ -5,7 +5,6 @@ import (
 	"compress/zlib"
 	"crypto/hmac"
 	"crypto/sha1"
-	"encoding/base64"
 	"encoding/binary"
 	"encoding/json"
 	"errors"
@@ -73,7 +72,8 @@ func (s *Signature) Zip(value string) (string, error) {
 
 }
 func (s *Signature) UnZip(value string) ([]byte, error) {
-	decoded, err := base64.StdEncoding.DecodeString(value)
+	decoded, err := base64Decode(value)
+	//decoded, err := base64.StdEncoding.DecodeString(value)
 	if err != nil {
 		return nil, err
 	}

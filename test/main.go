@@ -30,7 +30,7 @@ func main() {
 	signer := itsdangerous.NewSignature(secret, salt, "", "", nil, nil)
 
 	//str := ".eJyrViotTi1SsjKsBQAThANn"
-	user := User{User: 2}
+	//user := User{User: 2}
 	//str_b, _ := json.Marshal(user)
 	//str := string(str_b)
 
@@ -38,13 +38,15 @@ func main() {
 	//fmt.Println("Zip", itsdangerous.Base64Encode(encode))
 
 	//sign, err := signer.Sign(str)
-	sign, err := signer.Dumps(user)
-	if err != nil {
-		return
-	}
-	fmt.Println("sign", sign)
+	//sign, err := signer.Dumps(user)
+	//if err != nil {
+	//	return
+	//}
+	//fmt.Println("sign", sign)
+
 	//d := ".eJyrViotTi1SsjKqBQAThgNo.Di3+nEgD9CkuHHuFEZEE/qauyv8="
-	d := ".eJyrViotTi1SsjKqBQAThgNo.Di3-nEgD9CkuHHuFEZEE_qauyv8"
+	//d := ".eJyrViotTi1SsjKqBQAThgNo.Di3-nEgD9CkuHHuFEZEE_qauyv8"
+	d := ".eJwlzL0OgjAUQOF3uWFkuP2h7WXUQUfddCItvUQiRKAYJMZ3l-gZv-G84Zl4qtoIpdSUw7wODCWkmX3f8wI5dOzTRo3vEudQT-xnrua230xYbRwWSskc-DW0099Ikf3Z4FNaHtP2hiHcYyPLdPOyMKU0uJWN7uKOp93heh73Ua9jFpwl5Iihsc5IJsekFQdiJYgoRusLgxJROKVczSJ4QVgLY2sbC0YNny_tgjzm.FC46y9Deam5fxt-Ke4alH7vKeBo"
 	unsign, err := signer.Loads(d)
 	if err != nil {
 		fmt.Println("unsign", err)
