@@ -1,6 +1,6 @@
 package zlib
 
 /*
-#cgo LDFLAGS: -L./lib -lzlib_wrapper_darwin -lz
+#cgo LDFLAGS: -L${SRCDIR}/lib -lzlib_wrapper_darwin -lz
 */
 import "C"
