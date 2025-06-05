@@ -2,7 +2,8 @@
 ### 安装 MinGW-w64
 x86_64-w64-mingw32-gcc 在 MinGW-w64 里面
 下载地址 https://winlibs.com/
-找到 MinGW-w64 下载  附上最终下载地址[link:https://objects.githubusercontent.com/github-production-release-asset-2e65be/220996547/cda8e2e9-6de1-41c3-bd1f-b08b165563b8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250512%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250512T121450Z&X-Amz-Expires=300&X-Amz-Signature=f013de7b55a864784d6379e87c9116e60349a141a6bd8201d25a3d1faf8fdf1b&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dwinlibs-x86_64-posix-seh-gcc-15.1.0-mingw-w64msvcrt-12.0.0-r1.zip&response-content-type=application%2Foctet-stream]
+找到 MinGW-w64 下载  附上最终下载地址[link:https://github.com/brechtsanders/winlibs_mingw/releases/download/15.1.0posix-12.0.0-msvcrt-r1/winlibs-x86_64-posix-seh-gcc-15.1.0-mingw-w64msvcrt-12.0.0-r1.zip]
+
 
 解压后 mingw64 复制到 C:\Program Files (x86)
 环境变量 PATH 加上 C:\Program Files (x86)\mingw64\bin
@@ -17,7 +18,7 @@ https://zlib.net/zlib-1.3.1.tar.gz
 
 ### 下载Cmake
 https://cmake.org/download/
-最终下载地址 https://objects.githubusercontent.com/github-production-release-asset-2e65be/537699/8218aa6e-d1cf-4ac6-953b-dcbb36c4836a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250513T013344Z&X-Amz-Expires=300&X-Amz-Signature=ab7fac394fb62aabe19c6c186d005898dfd91aa71dfdf506bc31906b03478586&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dcmake-4.0.2-windows-x86_64.msi&response-content-type=application%2Foctet-stream
+最终下载地址 https://github.com/Kitware/CMake/releases/download/v4.0.2/cmake-4.0.2-windows-x86_64.msi
 双击安装
 
 ### 编译
