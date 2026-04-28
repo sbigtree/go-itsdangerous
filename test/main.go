@@ -12,7 +12,7 @@ type User struct {
 
 func main() {
 	// 保持默认压缩级别即可（和 Node 一致）
-	deflateString, err := zlib.DeflateString("123")
+	deflateString, err := zlib.DeflateString("itsdangerous")
 
 	if err != nil {
 		return
@@ -47,6 +47,7 @@ func main() {
 	//d := ".eJyrViotTi1SsjKqBQAThgNo.Di3+nEgD9CkuHHuFEZEE/qauyv8="
 	//d := ".eJyrViotTi1SsjKqBQAThgNo.Di3-nEgD9CkuHHuFEZEE_qauyv8"
 	d := ".eJwlzL0OgjAUQOF3uWFkuP2h7WXUQUfddCItvUQiRKAYJMZ3l-gZv-G84Zl4qtoIpdSUw7wODCWkmX3f8wI5dOzTRo3vEudQT-xnrua230xYbRwWSskc-DW0099Ikf3Z4FNaHtP2hiHcYyPLdPOyMKU0uJWN7uKOp93heh73Ua9jFpwl5Iihsc5IJsekFQdiJYgoRusLgxJROKVczSJ4QVgLY2sbC0YNny_tgjzm.FC46y9Deam5fxt-Ke4alH7vKeBo"
+	d = ".eJw9yEEKgCAQAMC_7FkCE13Wz4jUHgQrWZWK6O8dhG7DPNArS0greGetgkU4Ng4tbQxeI6Jx6GieyGgFfJUk44ks_V9irechK_i956yg3YWH3w9qAR0x.yB4XaRwdwrzwMkwglNtFXGzR4FQ"
 	unsign, err := signer.Loads(d)
 	if err != nil {
 		fmt.Println("unsign", err)

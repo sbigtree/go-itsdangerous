@@ -157,6 +157,7 @@ func (s *Signature) Dumps(value interface{}) (string, error) {
 }
 
 func (s *Signature) Loads(value string) (string, error) {
+	value = ToBase64ByDotIfPossible(value)
 	unsign, err := s.Unsign(value)
 	if err != nil {
 		return "", err
